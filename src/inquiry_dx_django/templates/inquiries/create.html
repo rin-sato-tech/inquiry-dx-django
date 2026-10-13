@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}新規登録 | 社内問い合わせ{% endblock %}{% block content %}<section class="narrow"><h1>新規問い合わせ</h1><p>内容と業務への影響を入力してください。希望日は、担当者が設定する対応期限とは異なります。</p><form method="post">{% csrf_token %}{{ form.as_p }}<button>登録する</button></form></section>{% endblock %}

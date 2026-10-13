@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}ログイン | 社内問い合わせ{% endblock %}{% block content %}<section class="narrow"><h1>ログイン</h1><p>発行された社員アカウントでログインしてください。</p><form method="post">{% csrf_token %}{{ form.as_p }}{% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}<button>ログイン</button></form></section>{% endblock %}
